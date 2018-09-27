@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 300        ; 5 minutes
+local              IN SOA  ns1.local. root.local. (
+                                2018092503 ; serial
+                                3600       ; refresh (1 hour)
+                                600        ; retry (10 minutes)
+                                1209600    ; expire (2 weeks)
+                                3600       ; minimum (1 hour)
+                                )
+                        NS      ns1.local.
+                        NS      ns2.local.
+                        MX      10 mail.local.
+                        MX      20 mail2.local.

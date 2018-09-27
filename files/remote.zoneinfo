@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 300        ; 5 minutes
+remote              IN SOA  ns1.remote. root.remote. (
+                                2018092503 ; serial
+                                3600       ; refresh (1 hour)
+                                600        ; retry (10 minutes)
+                                1209600    ; expire (2 weeks)
+                                3600       ; minimum (1 hour)
+                                )
+                        NS      ns1.remote.
+                        NS      ns2.remote.
+                        MX      10 mail.remote.
+                        MX      20 mail2.remote.
